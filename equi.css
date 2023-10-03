@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: 'Outfit',sans-serif;
+    color: hsl(0, 0%, 100%, 50%);
+    padding: 20px;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.final p span:hover{
+color: hsl(178, 100%, 50%);
+cursor: pointer;
+}
+.attribution {
+    font-size: 15px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  p{
+    font-weight: 300;
+  }
+  h2{
+    font-weight: 600;
+  }
+  .major{
+    padding: 35px;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 20px;
+    margin-bottom: 18px;
+  }
+  .major .top-img{
+position: relative;
+  }
+  .major .top-img div{
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .major .top-img div img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .major .top-img div:hover{
+   opacity: 1;
+   cursor: pointer;
+  }
+  .text h2{
+    color: white;
+    margin: 16px 8px 8px 0;
+  }
+  .text h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+.percent{
+    color: hsl(178, 100%, 50%);
+}
+.text ul li{
+    display: flex;
+    align-items: center;
+}
+.text ul li img{
+    margin-right: 5px;
+}
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 32px;
+}
+.final img{
+    width: 50px;
+    border: 2px solid white;
+    border: none;
+    border-radius: 50%;
+   margin-right: 16px;
+}
+.final p span{
+    color: white;
+    font-weight: 400;
+}
+@media(min-width: 500px){
+    .major{
+        width: 450px;
+        margin: 0 auto 10px; /*Moving Items to the Middle*/
+    }
+}
